@@ -9,6 +9,7 @@ This code is my own version of code from tutorial 'Criando serviço de microblog
 - Clone or donwload this repo;
 - Unzip
 - go to the root
+- run -> npm install
 - run -> node server
 
 Access your browser and go to http:localhost
