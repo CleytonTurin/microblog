@@ -16,5 +16,8 @@ Access your browser and go to http:localhost
 
 Enjoy =)
 
+##Demo
+http://node-sadspeck.rhcloud.com/
+
 ## Additional information
 This repository is a fork of [Ramr nodejs custom version](https://github.com/ramr/nodejs-custom-version-openshift). and can be runing in openShift Red Hat PaaS
