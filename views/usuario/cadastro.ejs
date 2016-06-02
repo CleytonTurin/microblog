@@ -1,0 +1,47 @@
+  
+  
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title>Cadastro</title>
+
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<link rel="stylesheet" href="/stylesheets/styles.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>   
+    
+  </head>
+  <body>
+  
+<% include ../navbar.ejs %>
+
+  <% include ../erros.ejs %>
+
+
+<div class='container'>
+<br>
+    <form action='/usuario/cadastro' method='POST'>
+            <label for="usuario_nome">Nome:</label><input type='text' name='usuario[nome]' id='usuario_nome' />
+            <label for="usuario_nickname">Nickname: @</label><input type='text' name='usuario[nickname]' id='usuario_nickname'/>
+            <label for="usuario_email">E-mail:</label><input type='text' name='usuario[email]' id='usuario_email'/>
+            <label for="usuario_senha">Senha:</label><input type='password' name='usuario[senha]' id='usuario_senha'/>
+            <label for="usuario_conf_senha">Confirmação de senha:</label><input type='password' name='usuario[conf_senha]' id='usuario_conf_senha'  />
+    
+                    <button class="btn waves-effect waves-light orange" type="submit" name="action">Pronto
+                        <i class="material-icons right">send</i>
+                    </button>
+            
+    </form>
+  
+  </div>
+
+  <script src="/javascripts/scripts.min.js"></script>
+   <script>
+      $(document).ready(function(){
+      $(".button-collapse").sideNav();
+      });
+  </script>
+  </body>
+  
+  
+</html>

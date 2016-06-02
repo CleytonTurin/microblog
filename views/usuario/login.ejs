@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<link rel="stylesheet" href="/stylesheets/styles.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>   
+    
+  </head>
+  <body>
+  
+<% include ../navbar.ejs %>
+
+  <% include ../erros.ejs %>
+
+
+  <form class="formulario container" action='/usuario/login/processa' method='POST'>
+       <div class="row">       
+              <div class="input-field col s12">
+                      <input type='text' name='usuario[nickname]' placeholder='Nickname' />
+              </div> 
+              <div class="input-field col s12">
+                      <input type='password' name='usuario[senha]' placeholder='Senha'  />
+              </div>
+      </div>
+       
+          <button class="btn waves-effect waves-light orange" type="submit" name="action">Entrar
+                <i class="material-icons right">send</i>
+          </button>
+         <a class="waves-effect waves-light orange btn" href='/usuario/cadastro'>Criar nova conta</a>
+        
+        
+  </form>
+
+  <script src="/javascripts/scripts.min.js"></script>
+   <script>
+      $(document).ready(function(){
+      $(".button-collapse").sideNav();
+      });
+  </script>
+  </body>
+  
+  
+</html>

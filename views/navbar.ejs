@@ -1,0 +1,26 @@
+			<div class="navbar-fixed">
+						<nav>
+							<div class="nav-wrapper orange">
+								<a href="/" class="center brand-logo">Nwetter</a>
+								<a href="#!" data-activates="menuLateral" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+								
+						        <ul class="side-nav" id="menuLateral">
+										<% if(typeof(usuario) != "undefined"){ %>
+										
+										<li><a href="/usuario/logout">Logout</a>
+										
+										<% }else{ %>
+										
+										<li><a href="/usuario/login">Login</a>										
+										
+										<% } %>
+        						</ul>
+								
+							</div>
+						</nav>
+			</div>
+
+
+
+
+
