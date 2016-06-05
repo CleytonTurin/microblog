@@ -8,10 +8,11 @@
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	
 	<link rel="stylesheet" href="/stylesheets/styles.min.css">
+  <link rel="stylesheet" href="/stylesheets/formulario.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>   
     
   </head>
-  <body>
+  <body class='orange'>
   
 <% include ../navbar.ejs %>
 
@@ -19,8 +20,9 @@
 
 
 <div class='container'>
-<br>
-    <form action='/usuario/cadastro' method='POST'>
+            <br><br>
+
+    <form class='formulario' action='/usuario/cadastro' method='POST'>
             <label for="usuario_nome">Nome:</label><input type='text' name='usuario[nome]' id='usuario_nome' />
             <label for="usuario_nickname">Nickname: @</label><input type='text' name='usuario[nickname]' id='usuario_nickname'/>
             <label for="usuario_email">E-mail:</label><input type='text' name='usuario[email]' id='usuario_email'/>

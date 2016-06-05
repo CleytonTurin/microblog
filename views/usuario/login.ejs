@@ -6,15 +6,17 @@
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	
 	<link rel="stylesheet" href="/stylesheets/styles.min.css">
+  <link rel="stylesheet" href="/stylesheets/formulario.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>   
     
   </head>
-  <body>
+  <body class='orange'>
   
 <% include ../navbar.ejs %>
 
   <% include ../erros.ejs %>
 
+  <br><br>
 
   <form class="formulario container" action='/usuario/login/processa' method='POST'>
        <div class="row">       
@@ -29,7 +31,7 @@
           <button class="btn waves-effect waves-light orange" type="submit" name="action">Entrar
                 <i class="material-icons right">send</i>
           </button>
-         <a class="waves-effect waves-light orange btn" href='/usuario/cadastro'>Criar nova conta</a>
+         <a class="waves-effect waves-light orange  btn" href='/usuario/cadastro'>Criar nova conta</a>
         
         
   </form>
