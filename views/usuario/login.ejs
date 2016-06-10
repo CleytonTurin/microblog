@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>   
     
   </head>
-  <body class='orange'>
+  <body class='cyan darken-4'>
   
 <% include ../navbar.ejs %>
 
@@ -18,7 +18,7 @@
 
   <br><br>
 
-  <form class="formulario container" action='/usuario/login/processa' method='POST'>
+  <form class="bloco container" action='/usuario/login/processa' method='POST'>
        <div class="row">       
               <div class="input-field col s12">
                       <input type='text' name='usuario[nickname]' placeholder='Nickname' />
@@ -28,10 +28,10 @@
               </div>
       </div>
        
-          <button class="btn waves-effect waves-light orange" type="submit" name="action">Entrar
+          <button class="btn waves-effect waves-light cyan darken-3" type="submit" name="action">Entrar
                 <i class="material-icons right">send</i>
           </button>
-         <a class="waves-effect waves-light orange  btn" href='/usuario/cadastro'>Criar nova conta</a>
+         <a class="waves-effect waves-light cyan darken-3  btn" href='/usuario/cadastro'>Criar nova conta</a>
         
         
   </form>

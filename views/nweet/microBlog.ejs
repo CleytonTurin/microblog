@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>   
     
   </head>
-  <body class='orange'>
+  <body class='cyan darken-4'>
 
 <% include ../navbar.ejs %>
 
@@ -21,11 +21,11 @@
     
             <% if(typeof(usuario) != "undefined"){ %>
               <br><br>            
-                  <form class='formulario' action="/nweet/submit" method="POST">
+                  <form class='bloco' action="/nweet/submit" method="POST">
                   
                         <label>Insira aqui seu Nweet (140 caracteres)!</label>
                         <textarea name='nweet[texto]' id='nweet_texto'></textarea>
-                        <button class="btn waves-effect waves-light orange" type="submit" name="action">Nweet!</button>
+                        <button class="btn waves-effect waves-light cyan darken-4" type="submit" name="action">Nweet</button>
                         <br><br>
                   </form>
 
@@ -48,7 +48,7 @@
                                         
                                               <div class="row">
                                                 <div class="col s12 m12 l12">
-                                                  <div class="card formulario">
+                                                  <div class="card bloco">
                                                     <div class="card-content">
                                                                         
                                               <% if(typeof(usuario) != "undefined" ){ %>
@@ -83,7 +83,8 @@
                             %>
                             
                     <% } %>
-          </div>       
+                  
+      </div>       
 </div>
 
 
